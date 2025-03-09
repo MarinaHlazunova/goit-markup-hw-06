@@ -17,6 +17,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -117,6 +123,23 @@ p {
   justify-content: space-between;
 }
 .logo {
+  padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.logo {
   margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -135,9 +158,27 @@ p {
   text-transform: uppercase;
   color: #2e2f42;
 }
-.header-nav-item {
-  display: flex;
-  gap: 40px;
+
+.header-nav-item,
+.header-address {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-item {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header-nav-item {
+    display: flex;
+    gap: 40px;
+  }
+  .header-address {
+    font-style: normal;
+    display: block;
+  }
 }
 
 .header-list-item {
@@ -174,17 +215,53 @@ p {
   bottom: -1px;
   left: 0;
 }
-.header-address {
-  font-style: normal;
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
-.header-nav-address {
-  display: flex;
-  gap: 40px;
-  margin: 0;
+.burger-btn {
+  display: block;
+  fill: #2f2f37;
 }
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-address {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .header-nav-address {
+    gap: 40px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header-address {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .header-nav-address {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+  }
+}
+
 .header-address-li {
   display: flex;
   gap: 40px;
