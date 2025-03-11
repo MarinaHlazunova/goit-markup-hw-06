@@ -88,6 +88,26 @@ p {
 }
 .container {
   max-width: 320px;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+/* .container {
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -106,7 +126,7 @@ p {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
+} */
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -115,7 +135,7 @@ p {
 .header-nav {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  padding: 0 16px;
 }
 
 .header-container {
@@ -123,23 +143,11 @@ p {
   justify-content: space-between;
 }
 .logo {
-  padding: 16px 0;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 .logo {
+  display: block;
+  padding: 16px 0;
   margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -216,14 +224,13 @@ p {
   left: 0;
 }
 .burger-btn {
-  padding: 0;
+  padding: 0 16px;
   border: none;
   background-color: transparent;
-}
-.burger-btn {
   display: block;
   fill: #2f2f37;
 }
+
 @media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
@@ -259,6 +266,7 @@ p {
     display: flex;
     gap: 40px;
     margin: 0;
+    font-style: normal;
   }
 }
 
