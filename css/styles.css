@@ -606,18 +606,61 @@ p {
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-direction: column;
+}
+.footer-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-div-logo {
+  max-width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialmedia-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
 }
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .footer-cont {
-    margin: 0 auto;
-    padding: 0 15px;
     display: flex;
-    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 110px;
   }
   .footer-container {
     display: flex;
+    align-items: flex-start;
+    margin-top: 72px;
+  }
+  .footer-div-logo {
+    max-width: 264px;
+    margin-right: 24px;
+  }
+  .socialmedia-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .footer-form-container {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -629,13 +672,26 @@ p {
     display: flex;
     align-items: baseline;
     flex-direction: row;
+    justify-content: center;
+  }
+  .footer-div-logo {
+    max-width: 264px;
+    margin-right: 120px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+  }
+  .socialmedia-footer {
+    margin: 0 80px 0 0;
+  }
+  .footer-form-container {
+    display: flex;
+    flex-direction: row;
   }
 }
 
-.footer-div-logo {
-  max-width: 264px;
-  margin-right: 120px;
-}
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -666,9 +722,7 @@ p {
   color: #f4f4fd;
   max-width: 264px;
 }
-.socialmedia-footer {
-  margin-right: 80px;
-}
+
 .footer-social-name {
   font-weight: 500;
   font-size: 16px;
@@ -909,6 +963,7 @@ p {
 }
 .footer-icon-subscibe {
   margin-left: 16px;
+  fill: #ffffff;
 }
 .modal-container-block-comment {
   margin-bottom: 16px;
